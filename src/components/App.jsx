@@ -5,6 +5,7 @@ import ListContacts from "./ListContacts";
 
 const App = () => {
   const removeContact = (contact) => {
+    // Filters out the deleted contact and returns the new array
     setContacts(contacts.filter(c => c.id !== contact.id ));
   }
 
